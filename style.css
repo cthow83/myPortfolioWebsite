@@ -1,14 +1,14 @@
 :root {
-    --darkblue: #1F2A40;
+    --darkblue: #1f2a40;
     --midblue: #164773;
     --teal: #196774;
     --aqua: #86fbfb;
     --white: #f7f8fa;
-    --grey: #90A19D;
-    --lightorange: #F0941F;
-    --darkorange: #EF6024;
+    --grey: #90a19d;
+    --lightorange: #f0941f;
+    --darkorange: #ef6024;
     --font-size: 1.3rem;
-    --mono: "Oxygen mono", monospace;
+    --mono: 'Oxygen mono', monospace;
     --sans: Oxygen, sans-serif;
 }
 
@@ -41,7 +41,7 @@ h3 {
 }
 
 .orange-point {
-    color: var(--lightorange)
+    color: var(--lightorange);
 }
 
 a {
@@ -66,20 +66,20 @@ a:hover {
 }
 
 .seperator {
-    background: linear-gradient(90deg, rgba(31, 42, 64, 1) 0%, rgba(22, 71, 115, 1) 35%, rgba(239, 96, 36, 1) 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(31, 42, 64, 1) 0%,
+        rgba(22, 71, 115, 1) 35%,
+        rgba(239, 96, 36, 1) 100%
+    );
     height: 5px;
-
 }
-
-
 
 /* Intro Styles */
 #intro {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 1rem 5rem 1rem;
-
-
 }
 
 #intro p {
@@ -136,8 +136,6 @@ a:hover {
     background-color: lightgray;
 }
 
-
-
 /* nav section */
 
 nav {
@@ -176,8 +174,8 @@ nav li:first-child {
     text-align: center;
 }
 
-nav [class*="fa-"] {
-    font-size: 150%
+nav [class*='fa-'] {
+    font-size: 150%;
 }
 
 nav li:first-child i {
@@ -196,10 +194,10 @@ nav li:first-child i {
 
 .cv-button:hover {
     background-color: var(--lightorange);
-    color: white
+    color: white;
 }
 
-nav h1 [class*="fa-"] {
+nav h1 [class*='fa-'] {
     font-size: 100%;
     padding-bottom: 10px;
 }
@@ -242,7 +240,7 @@ footer {
 }
 
 .portfolio {
-    padding: 2rem 1rem 2rem 1rem
+    padding: 2rem 1rem 2rem 1rem;
 }
 
 .portfolio h1 {
@@ -295,15 +293,16 @@ img {
     margin: auto;
 }
 
-
-
-
+.heroImage {
+    max-width: auto;
+    height: 600px;
+    margin: 10px;
+}
 
 @media (min-width: 1000px) {
     .portfolio {
         max-width: 1200px;
         margin: 0 auto;
-
     }
 
     img {
@@ -325,7 +324,6 @@ img {
 
     .align-left {
         text-align: left;
-        color: var(--darkorange)
+        color: var(--darkorange);
     }
-
 }
