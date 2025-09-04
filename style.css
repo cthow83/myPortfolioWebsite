@@ -297,9 +297,9 @@ img {
 }
 
 .heroImage {
-    max-width: auto;
-    height: 600px;
-    margin: 10px;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
 }
 
 @media (min-width: 1000px) {
