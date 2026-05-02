@@ -1,14 +1,14 @@
 :root {
-    --darkblue: #1f2a40;
-    --midblue: #164773;
-    --darkteal: #0f4852;
-    --midteal: #0e6e75;
-    --teal: #196774;
-    --aqua: #86fbfb;
-    --white: #f7f8fa;
-    --grey: #90a19d;
-    --lightorange: #f0941f;
-    --darkorange: #ef6024;
+    --darkblue: #081a3a;
+    --midblue: #124b9b;
+    --darkteal: #0a2a5e;
+    --midteal: #113f86;
+    --teal: #2f74d0;
+    --aqua: #8cc8ff;
+    --white: #eef5ff;
+    --grey: #9eb5d6;
+    --lightorange: #5da9ff;
+    --darkorange: #1f66d1;
     --font-size: 1.3rem;
     --mono: 'Oxygen mono', monospace;
     --sans: Oxygen, sans-serif;
@@ -73,7 +73,7 @@ a:hover {
         90deg,
         rgba(31, 42, 64, 1) 0%,
         rgba(22, 71, 115, 1) 35%,
-        rgba(239, 96, 36, 1) 100%
+        rgba(31, 102, 209, 1) 100%
     );
     height: 5px;
 }
@@ -130,13 +130,14 @@ a:hover {
     padding: 10px 30px;
 
     box-shadow: 2px 2px black;
-    background-color: white;
-    border: white;
+    background-color: var(--white);
+    border: 1px solid var(--aqua);
+    color: var(--darkblue);
     border-radius: 10%;
 }
 
 .contact-me-button:hover {
-    background-color: lightgray;
+    background-color: var(--aqua);
 }
 
 /* nav section */
