@@ -98,7 +98,7 @@ a:hover {
 .name span {
     font-family: var(--sans);
     font-size: 4rem;
-    color: var(--darkorange);
+    color: #ef6024;
     display: block;
 }
 
@@ -187,21 +187,21 @@ nav [class*='fa-'] {
 }
 
 nav li:first-child i {
-    color: var(--darkorange);
+    color: #ef6024;
 }
 
 .cv-button {
     padding: 10px;
     font-size: 1.2rem;
     box-shadow: 2px 2px black;
-    background-color: var(--darkorange);
+    background-color: #ef6024;
     color: white;
-    border: var(--darkorange);
+    border: #ef6024;
     border-radius: 3%;
 }
 
 .cv-button:hover {
-    background-color: var(--lightorange);
+    background-color: #f0941f;
     color: white;
 }
 
@@ -262,7 +262,7 @@ h3 {
 }
 
 .project-name {
-    color: var(--darkorange);
+    color: #ef6024;
 }
 
 .tech {
@@ -332,6 +332,6 @@ img {
 
     .align-left {
         text-align: left;
-        color: var(--darkorange);
+        color: #ef6024;
     }
 }
