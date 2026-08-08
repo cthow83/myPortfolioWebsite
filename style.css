@@ -19,7 +19,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 *,
@@ -34,7 +34,7 @@ body {
     margin: 0;
     font-family: var(--sans);
     background-color: var(--bg);
-    overflow-x: hidden;
+    overflow-x: clip;
     color: var(--text);
     font-size: var(--font-size);
     text-align: center;
