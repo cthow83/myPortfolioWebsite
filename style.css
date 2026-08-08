@@ -76,12 +76,15 @@ a:hover {
 .seperator {
     background: linear-gradient(90deg, #4a6fa5 0%, #2e86c1 100%);
     height: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 3px;
 }
 
 /* Intro Styles */
 #intro {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 2rem auto 4.5rem;
     padding: 2rem;
     background-color: #fafafa;
     border-radius: 12px;
