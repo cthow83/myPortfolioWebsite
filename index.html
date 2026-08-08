@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/650743021b.js" crossorigin="anonymous"></script>
@@ -33,24 +33,59 @@
     </nav>
 
     <section id="intro">
-        <p class="name">Hi, my name is <span>Chris Howarth.</span>
-        </p>
+        <p class="name">Hi, I'm <span>Chris Howarth.</span></p>
 
-        <h2>I craft seamless front-end experiences</h2>
+        <h2>Software Engineer &amp; Epic Lead at the <a href="https://www.bbc.co.uk/">BBC</a></h2>
 
-        <p>I'm a web developer specializing in HTML, CSS, JavaScript, TypeScript and React.</p>
-        <p>I bring a passion for crafting user-friendly experiences across web and mobile platforms. My expertise spans
-            both front-end and back-end development, utilizing technologies like HTML, CSS, JavaScript, React, and
-            TypeScript.</p>
-        <p>I also have experience using several AWS products, including AWS S3, EC2, Cloudfront, CodeBuild, Lambda and
-            the CDK</p>
+        <p>I'm a software engineer with 4 years at the BBC, working across Live Pages and the Participation &amp;
+            Gamification team. I lead cross-functional epics end-to-end — from architecture and stakeholder alignment
+            through to production — and act as a go-to technical authority for Live &amp; Interactive Experiences.</p>
 
-        <h4>Currently at BBC:</h4>
+        <p>Beyond shipping features, I mentor engineers on TypeScript and React patterns, establish technical
+            documentation for new codebases, and participate in the BBC Security Champions network, including threat
+            modelling and application security reviews.</p>
 
-        <p>
-            I apply my front-end development skills at the <a href="https://www.bbc.co.uk/">BBC</a>, crafting intuitive
-            and performant user experiences that serve millions of users across high-traffic live content pages.
-        </p>
+        <a href="#portfolio-section" class="hero-cta">View my work ↓</a>
+
+        <div class="tech-stack">
+            <div class="tech-group">
+                <h4>Languages</h4>
+                <ul class="tech">
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="tech-group">
+                <h4>Frontend</h4>
+                <ul class="tech">
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </div>
+            <div class="tech-group">
+                <h4>Cloud &amp; Testing</h4>
+                <ul class="tech">
+                    <li>AWS Lambda</li>
+                    <li>CloudFormation</li>
+                    <li>CloudWatch</li>
+                    <li>Jest</li>
+                    <li>Playwright</li>
+                </ul>
+            </div>
+            <div class="tech-group">
+                <h4>Tools</h4>
+                <ul class="tech">
+                    <li>Git</li>
+                    <li>Optimizely</li>
+                    <li>Grafana</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+        </div>
 
     </section>
 
@@ -64,7 +99,75 @@
             <h1>Recent Projects</h1>
             <section>
                 <div>
-                    <h3>Latest Project</h3>
+                    <h3 class="latest-badge">Latest Project</h3>
+                    <h2 class="project-name">BBC Live Comments</h2>
+                </div>
+                <div class="aproject reverse">
+                    <p class="image-align">
+                        <img src="./img/Comments.png" alt="BBC Live Comments screenshot" class="heroImage">
+                    </p>
+                    <div class="text">
+                        <div class="section-darkblue-div">
+                            <p class="project-description">
+                                As epic lead, I oversaw the end-to-end delivery of Live Comments — a feature enabling
+                                audiences to post and view real-time comments directly on BBC live pages. This brought
+                                a new layer of interactivity to live news and sport coverage, allowing readers to
+                                engage with unfolding stories as they happen.
+                            </p>
+                            <p class="project-description">
+                                Leading the epic involved coordinating across multiple teams, defining the technical
+                                approach, and contributing directly to the front-end implementation using React and
+                                TypeScript. The feature required careful consideration of moderation, accessibility,
+                                and performance at BBC scale.
+                            </p>
+                        </div>
+                        <h3>Technologies used:</h3>
+                        <ul class="tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2 class="project-name">Predict Branding A/B Test</h2>
+                </div>
+                <div class="aproject reverse">
+                    <p class="image-align">
+                        <img src="./img/Predictor.png" alt="Predict branding A/B test screenshot" class="heroImage">
+                    </p>
+                    <div class="text">
+                        <div class="section-darkblue-div">
+                            <p class="project-description">
+                                This project involved implementing an A/B test on the BBC Sport Predictor to evaluate
+                                the impact of different visual branding approaches on user engagement. Using Optimizely
+                                as the experimentation platform, distinct branding variants were served to different
+                                user groups to measure which design best drove participation.
+                            </p>
+                            <p class="project-description">
+                                Key work included integrating Optimizely view and click events with user attributes,
+                                implementing event naming conventions for experimentation tracking, and wiring ATI
+                                analytics events alongside Optimizely events. Extensive debugging ensured events fired
+                                correctly on page load and user interaction, with coverage for edge cases where user
+                                data was absent or undefined.
+                            </p>
+                        </div>
+                        <h3>Technologies used:</h3>
+                        <ul class="tech">
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Optimizely</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
                     <h2 class="project-name">BBC Live Calendar</h2>
                 </div>
                 <div class="aproject reverse">
@@ -164,16 +267,9 @@
 
                         <div class="section-darkblue-div">
                             <p class="project-description">
-                                This project introduces a real-time visitor count feature to promotional sections of web
-                                pages. By integrating live analytics, the system displays the current number of users
-                                actively viewing a page, enhancing engagement and providing instant feedback to both
-                                site visitors and administrators.
-
-                            </p>
-                            <p class="project-description">
-                                This interactive element not only boosts transparency but also encourages participation
-                                by showcasing page popularity in real time
-
+                                Built a real-time concurrent viewer count displayed within promotional blocks on BBC
+                                live pages. The feature surfaces live audience data to both readers and editorial
+                                teams, making page popularity visible during breaking news and major sporting events.
                             </p>
                         </div>
                         <h3>Technologies used:</h3>
@@ -199,25 +295,11 @@
                     <div class="text">
 
                         <div class="section-darkblue-div">
-
                             <p class="project-description">
-                                This project centered on building the BBC Live Hub web page using JavaScript and React.
-                            </p>
-                            <p class="project-description">
-                                The goal was to create a central location for users to access live streams and browse
-                                upcoming or ongoing broadcasts from BBC News, Sport, and Weather.
-                            </p>
-                            <p class="project-description">
-                                The development team utilized JavaScript to handle user interaction. This allowed
-                                features
-                                like switching between live streams and exploring program details. React played a
-                                crucial
-                                role in ensuring a dynamic and responsive user experience across
-                                various devices. The project prioritized clear code structure and documentation using
-                                JavaScript best practices for future maintenance and updates. This successful
-                                implementation
-                                using JavaScript and React delivered a user-friendly and interactive BBC Live Hub web
-                                page.
+                                Built the BBC Live Hub — a centralised destination for users to discover and access
+                                live streams across BBC News, Sport, and Weather. The page surfaces currently live and
+                                upcoming broadcasts in a single view, with dynamic updates as programming changes
+                                throughout the day.
                             </p>
                         </div>
                         <h3>Technologies used:</h3>
@@ -246,45 +328,16 @@
 
                         <div class="section-darkblue-div">
                             <p class="project-description">
-                                This project centered on building a dynamic and informative <a
-                                    href="https://www.bbc.co.uk/sport/football/live/c2jj8k5vym5t" target="_blank">BBC
-                                    Sport
-                                    Match page</a>
-                                using
-                                JavaScript, React, and TypeScript. The goal was to create a single webpage dedicated to
-                                a
-                                specific sporting event, offering fans a comprehensive and interactive experience.
+                                Built the <a href="https://www.bbc.co.uk/sport/football/live/c2jj8k5vym5t"
+                                    target="_blank">BBC Sport Live Match page</a> — a dedicated page for following
+                                sporting events in real time. The page surfaces live scores, match commentary,
+                                statistics, and team information via a tabbed interface, updating dynamically
+                                throughout the match.
                             </p>
                             <p class="project-description">
-                                The development team utilized JavaScript for a variety of functionalities. User
-                                interaction
-                                features like live score updates, commentary feeds, and potentially interactive elements
-                                like polls or statistics relied on JavaScript for smooth operation. To enhance code
-                                maintainability and reduce errors, TypeScript was implemented.
-                                TypeScript's static typing capabilities ensured type safety and improved code
-                                readability.
-                            </p>
-                            <p class="project-description">
-                                React played a crucial role in creating a dynamic and
-                                responsive user experience. This ensured the BBC Sport Match page functioned seamlessly
-                                across various devices, including desktops, tablets, and mobile phones. The project
-                                prioritized well-structured and documented code using JavaScript and React best
-                                practices,
-                                along with TypeScript for type safety. This approach facilitated future maintenance and
-                                feature additions.
-                            </p>
-                            <p class="project-description">
-                                A key aspect of the project involved implementing tabs that allowed users to navigate
-                                between different sections of the page. This functionality, achieved using JavaScript
-                                libraries and React components, enabled users to switch between live scores, match
-                                commentary, match statistics, and even team information or live reporting,
-                                all within the same webpage.
-                            </p>
-                            <p class="project-description">
-                                This successful implementation using JavaScript, React, and TypeScript delivered a
-                                user-friendly and engaging BBC Sport Match page for fans to follow their favorite
-                                sporting
-                                events in a dynamic and interactive way.
+                                Implemented in React with TypeScript for type safety across a complex, data-driven
+                                component tree, ensuring the page remained responsive and maintainable across
+                                desktops, tablets, and mobile.
                             </p>
                         </div>
                         <h3>Technologies used:</h3>
@@ -387,9 +440,8 @@
     <div class="seperator"></div>
 
     <footer>
-        <h2>Chris Howarth · Developer</h2>
-        <p>
-
+        <h2>Chris Howarth</h2>
+        <p class="footer-tagline">Front-end Engineer &middot; BBC &middot; React &middot; TypeScript</p>
         <ul class="footer-links">
 
             <li><a href="https://www.linkedin.com/in/cthow83" target="_blank"><i class="fa-brands fa-linkedin"
@@ -399,8 +451,7 @@
             <li><a href="mailto:cthowarth@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span
                         class="sr-only">Email Me</span></a></li>
         </ul>
-        </p>
-        <small class="copywrite-info">©2024 Chris Howarth. All rights reserved.</small>
+        <small class="copywrite-info">©2026 Chris Howarth. All rights reserved.</small>
     </footer>
 
 </body>
