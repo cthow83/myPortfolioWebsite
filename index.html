@@ -454,6 +454,16 @@
         <small class="copywrite-info">©2026 Chris Howarth. All rights reserved.</small>
     </footer>
 
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+    <script>
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            btn.classList.toggle('visible', window.scrollY > 400);
+        });
+    </script>
+
 </body>
 
 
